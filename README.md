@@ -43,7 +43,3 @@ git clone https://github.com/your-username/TradingApp.git
 > All instrument prices are generated using a random distribution for simulation purposes and do not reflect real-market data.
 
 ---
-
-### Suggested Next Step for your Homelab:
-
-Since you are planning a **Talos/Kubernetes** production environment on your GMKtec K8, would you like me to help you draft a **Dockerfile** or a **CI/CD pipeline** for this app so you can practice deploying it as a microservice?
