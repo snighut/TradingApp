@@ -1,5 +1,51 @@
-# TradingApp
-This is a C# .net application that mimics the characteristics of a trading application. There is price update service that raises price update event 20 times in a second. This gives a real time feel to the application. Each and every time a new price about an instrument is updated the GUI shows the same using coloring scheme. If the new price of the stock is higher than previous then Blue color will blink in the background of that cell or else Red. If the price is not changed then a neutral color i.e. LightGray would be set to background.
-In order to run the application set the WPFTradeApp project as the Startup project by right clicking on it(inside Visual Studio 2013/15). Once this step is done then run your application.
+---
 
-Note: The price of the instruments are dummy values which is calculated randomly using the Random function of Math library
+# 📈 TradingApp (C#/.NET)
+
+A high-frequency real-time trading dashboard built with .NET and WPF. This application simulates a live market environment by processing rapid price updates and visualizing market trends through a dynamic UI.
+
+## 🚀 Key Features
+
+* **Real-Time Price Engine:** A dedicated service simulates live market volatility by broadcasting price update events 20 times per second (20Hz).
+* **Dynamic UI Feedback:** The WPF frontend features a reactive coloring scheme to visualize price movements instantly:
+* 🔵 **Blue:** Price Increase (Bullish movement)
+* 🔴 **Red:** Price Decrease (Bearish movement)
+* ⚪ **Light Gray:** No change
+
+
+* **Event-Driven Architecture:** Demonstrates decoupling between the data simulation service and the UI layer.
+
+## 🛠 Tech Stack
+
+* **Language:** C#
+* **Framework:** .NET / WPF (Windows Presentation Foundation)
+* **Logic:** Event-based notifications and `System.Math` for randomized price generation.
+
+## 🏁 Getting Started
+
+### Prerequisites
+
+* Visual Studio (2022 recommended; compatible with 2013/2015)
+* .NET Desktop Development workload installed
+
+### Installation & Run
+
+1. **Clone the repository:**
+```bash
+git clone https://github.com/your-username/TradingApp.git
+
+```
+
+
+2. **Open the solution:** Launch `TradingApp.sln` in Visual Studio.
+3. **Set Startup Project:** Right-click the **WPFTradeApp** project in the Solution Explorer and select **Set as Startup Project**.
+4. **Execute:** Press `F5` or click **Start** to run the simulation.
+
+> [!NOTE]
+> All instrument prices are generated using a random distribution for simulation purposes and do not reflect real-market data.
+
+---
+
+### Suggested Next Step for your Homelab:
+
+Since you are planning a **Talos/Kubernetes** production environment on your GMKtec K8, would you like me to help you draft a **Dockerfile** or a **CI/CD pipeline** for this app so you can practice deploying it as a microservice?
