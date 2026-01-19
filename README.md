@@ -1,5 +1,3 @@
----
-
 # 📈 TradingApp (C#/.NET)
 
 A high-frequency real-time trading dashboard built with .NET and WPF. This application simulates a live market environment by processing rapid price updates and visualizing market trends through a dynamic UI.
